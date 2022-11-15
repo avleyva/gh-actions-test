@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Solo imprimir una cadena simple
-        run: echo "Hola Mundo"
+        run: echo "Hola Mundo que tal!"
       - name: Una segunda actividad
         run: node -v
