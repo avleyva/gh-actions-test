@@ -1,5 +1,5 @@
 # Nombre que le daremos al Workflow. Puede ser el nombre que se desee.
-name: Ejecución simple de shell Commands
+name: Ejecución simple de shell Commands.
 
 # Se especifica la acción o acciones que desencadenarán este script, por ejemplo `push`, `pull-request`
 on: [push]
