@@ -1,0 +1,15 @@
+# Nombre que le daremos al Workflow. Puede ser el nombre que se desee.
+name: Shell Commands
+
+# Se especifica la acción o acciones que desencadenarán este script, por ejemplo `push`, `pull-request`
+on: [push]
+
+# Se agregan todos los jobs a ejecutar cada vez que se realice un push en el repositorio
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Solo imprimir una cadena simple
+        run: echo "Hola Mundo"
+      - name: Una segunda actividad
+        run: node -v
