@@ -11,7 +11,7 @@ jobs:
         # En este ejemplo se utiliza un repositorio llamado actions/hello-word-javascript-action
         # y se refiere al commit etiquetado como v1, también podríamos utilizar un commitId o un branch name
         # https://github.com/actions/hello-world-javascript-action
-        uses: actions/hello-world-javascript-action@v1
+        uses: actions/hello-world-javascript-action@v1.1
         with:
           who-to-greet: Alfredito
       - name: Obtener respuesta de acción anterior
