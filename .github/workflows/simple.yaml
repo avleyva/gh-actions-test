@@ -17,4 +17,4 @@ jobs:
       - name: Una segunda actividad
         run: |
           node -v
-          nom -v
+          npm -v
