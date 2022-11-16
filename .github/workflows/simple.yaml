@@ -6,10 +6,15 @@ on: [push]
 
 # Se agregan todos los jobs a ejecutar cada vez que se realice un push en el repositorio
 jobs:
-  run-shell-command:
+  # Este es un job, se le da el nombre deseado, por ejemplo "job-de-prueba"
+  job-de-prueba:
+    # Se debe indicar el SO en el que se desea ejecutar las tareas de este job
     runs-on: ubuntu-latest
+    # A continuación se especifican los pasos que se deben realizar de forma secuencial
     steps:
       - name: Solo imprimir una cadena simple
         run: echo "Hola Mundo que tal!"
       - name: Una segunda actividad
-        run: node -v
+        run: |
+          node -v
+          nom -v

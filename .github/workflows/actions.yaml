@@ -1,0 +1,18 @@
+name: Workflow de Acciones de Prueba
+
+on: [push]
+
+jobs:
+  ejecutar-acciones-simples:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Acción Simple de JavaScript
+        id: greet
+        # En este ejemplo se utiliza un repositorio llamado actions/hello-word-javascript-action
+        # y se refiere al commit etiquetado como v1, también podríamos utilizar un commitId o un branch name
+        # https://github.com/actions/hello-world-javascript-action
+        uses: actions/hello-world-javascript-action@v1
+        with:
+          who-to-greet: Alfredito
+      - name: Obtener respuesta de acción anterior
+        run: echo "${{steps.greet.outputs.time}}"
